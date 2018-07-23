@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1> {{ msg }} </h1>
+    <h1 class="title"> {{ msg }} </h1>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       msg: 'this is home page'
     }
@@ -14,6 +14,9 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+@import (reference) '../../static/css/base.less';
+.title {
+  .size(900px, 500px);
+}
 </style>
