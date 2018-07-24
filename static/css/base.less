@@ -1,4 +1,47 @@
+@import './theme.less';
+
+ // Box wide high
 .size(@w, @h) {
   width: @w;
   height: @h;
+}
+
+// Remove the floating （ IE6 & IE7 compatibility）
+.clearFix() {
+  zoom: 1; //为了兼容IE6,7
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// The left floating
+.lf {
+  float: left;
+}
+
+// The left floating
+.rt {
+  float: right;
+}
+
+// absolute top left
+.tl(@t, @l) {
+  position: absolute;
+  top: @t;
+  left: @l;
+}
+
+// The color and size of font
+.f-color-size(@c, @s) {
+  color: @c;
+  font-size: @s;
+}
+
+ul, ol, li {
+  list-style: none;
 }
