@@ -1,9 +1,12 @@
-@import './theme.less';
-
- // Box wide high
+@import './theme.less'; // Box wide high
 .size(@w, @h) {
   width: @w;
   height: @h;
+}
+
+.lh(@h) {
+  height: @h;
+  line-height: @h;
 }
 
 // Remove the floating （ IE6 & IE7 compatibility）
@@ -42,6 +45,8 @@
   font-size: @s;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
