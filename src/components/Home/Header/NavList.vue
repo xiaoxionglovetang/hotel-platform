@@ -22,13 +22,13 @@ export default {
   },
   methods: {
     onCurrentlyClicked (id) {
-      this.isCurrentlyClicked = id;
+      this.isCurrentlyClicked = id
     }
   }
 }
 </script>
 
-<style scoped lang="less">
+<style lang="less" scoped>
 @import (reference) "../../../../static/css/base.less";
 .list {
   .clearFix();

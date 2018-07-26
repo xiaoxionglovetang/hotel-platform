@@ -6,10 +6,16 @@
         <div class="nav-box">
           <nav-list></nav-list>
         </div>
-         <div class="use-enter">
+        <div class="use-enter">
           <contrast-button class="login"></contrast-button>
           <gradient-button class="register"></gradient-button>
-         </div>
+        </div>
+        <span class="split"></span>
+        <div class="icon-box">
+          <qr-download class="qr"></qr-download>
+          <ask-questions class="ask"></ask-questions>
+          <oversea-site class="site"></oversea-site>
+        </div>
       </div>
     </div>
   </div>
@@ -19,8 +25,11 @@
 import NavList from './NavList'
 import ContrastButton from './Base/ContrastButton'
 import GradientButton from './Base/GradientButton'
+import AskQuestions from './Base/AskQuestions.vue'
+import OverseaSite from './Base/OverseaSite'
+import QrDownload from './Base/QrDownload'
 export default {
-  components: { NavList, ContrastButton, GradientButton },
+  components: { NavList, ContrastButton, GradientButton, AskQuestions, OverseaSite, QrDownload },
   data () {
     return {
     }
@@ -28,7 +37,7 @@ export default {
 }
 </script>
 
-<style scoped lang="less">
+<style lang="less" scoped>
 @import (reference) "../../../../static/css/base.less";
 
 .container {
@@ -71,6 +80,22 @@ export default {
   .register {
     display: inline-block;
     margin-left: 5px;
+  }
+}
+.split {
+  .rt;
+  .size(1px, 12px);
+  margin: 9px 15px 0 5px;
+  background-color: #a9a9a4;
+}
+
+.icon-box {
+  .rt;
+  width: auto;
+  height: 30px;
+  .ask, .site, .qr {
+    display: inline-block;
+    margin: 0 4px;
   }
 }
 </style>
