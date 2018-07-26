@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style scoped lang="less">
+<style lang="less" scoped>
 @import (reference) '../../static/css/base.less';
 .home {
   width: 100%;
